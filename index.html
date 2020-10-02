@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mahi's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Piedra&family=Play:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* css reset */
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('img/x.jpg');
+    height: 1390px;
+}
+.left{
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 34px;
+    top: 22px;
+    /* float: left; */
+}
+.left img{
+    width: 100px;
+    filter: invert(100%);
+}
+.left div{
+    text-align: center;
+}
+.middle{
+    display: block;
+    width: 54%;
+    margin:42px auto;
+    /* border: 2px solid blue; */
+}
+.navbar{
+    color: white;
+
+}
+.navbar li{
+    display: inline-block;
+    padding: 2px 17px;
+}
+.navbar li a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+.navbar li a:active{
+    background-color: brown;
+}
+.right{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 22px;
+    /* float: right; isse v karr sakte hai */  
+}
+.btn{
+    margin: 8px 9px;
+    padding: 4px 14px;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn:hover{
+    color: yellow;
+}
+.container{
+    border: 2px solid white;
+    margin: 122px 52px;
+    padding: 53px 53px;
+    width: 26%;
+    border-radius: 20px;
+}
+.form-group input{
+    text-align: center;
+    margin: 7px 12px;
+    padding: 0px 102px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    display: block;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    margin: 18px 8px;
+    display: block;
+    width: 81%;
+    text-align: center;
+    font-size: 18px;
+}
+</style>
+<body>
+    <header class="header">
+        <!-- left fox for logo -->
+        <div class="left">
+        <img src="img/1.png" alt="">
+        <div>Here's Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#" class="">Home</a></li>
+                <li><a href="#" class="">About Us</a></li>
+                <li><a href="#" class="">Fitness Mantras</a></li>
+                <li><a href="#" class="">Contact Us</a></li>
+                
+            </ul>
+        </div>
+    <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kolkata now</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</form>
+</body>
+</html>
